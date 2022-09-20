@@ -51,6 +51,7 @@ public class PhoneBook {
 
                 case 6:
                     settings();
+
                     break;
 
                 case 11:
