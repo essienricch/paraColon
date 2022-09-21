@@ -1,4 +1,4 @@
-package chapter6;
+package Chapter6;
 import java.security.SecureRandom;
 public class Craps {
 
@@ -35,7 +35,7 @@ public class Craps {
                 gameStatus = Status.WON;
             }
             else{
-                if(sumOfDice == SEVEN){
+                if(sumOfDice == SEVEN || sumOfDice == YO_LEVEN){
                     gameStatus = Status.LOST;
                 }
             }
