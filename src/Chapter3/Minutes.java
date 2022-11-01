@@ -1,4 +1,4 @@
-package previousProj;
+package Chapter3;
 
 import java.util.Scanner;
 

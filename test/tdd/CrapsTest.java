@@ -1,5 +1,6 @@
-package chapter6;
+package tdd;
 
+import Chapter6.Craps;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;

@@ -1,4 +1,4 @@
-package previousProj;
+package Chapter3;
 
 import java.util.Scanner;
 
@@ -11,16 +11,12 @@ public class Conversion{
 
       System.out.print("\"Enter\" ");
       System.out.print("a value for feet: ");
-
       double feet = input.nextDouble();
 
-      double metre = feet * 0.305;
+      double metre = 0.305 * feet;
 
-      System.out.printf("%.1f feet is %.4f metres", feet,metre);
-     
+      System.out.printf("%.2f feet is %.2f metres", feet,metre);
 
-     
-   //main method end
    }
 
 
