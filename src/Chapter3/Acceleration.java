@@ -1,4 +1,4 @@
-package previousProj;
+package Chapter3;
 
 import java.util.Scanner;
 
@@ -17,8 +17,8 @@ public class Acceleration{
      System.out.print("Enter the time span(s): ");
      int t = input.nextInt();
 
-     double A = (v1-v0)/t;
-     System.out.printf("%s is the average acceleration", A);
+     //double A = (v1-v0)/t;
+     System.out.println("Your average acceleration: "+ (v1-v0)/t);
 
    }
 
