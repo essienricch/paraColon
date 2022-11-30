@@ -11,5 +11,4 @@ public class Babe {
         return name;
     }
 
-    public void obtain(){}
 }

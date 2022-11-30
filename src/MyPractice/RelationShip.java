@@ -8,7 +8,10 @@ public class RelationShip {
 
     public void changeBabe(Babe newBabe){
         girlFriend = newBabe;
+
     }
+
+
 
     public String whatYaBabesName(){
         return girlFriend.getName();

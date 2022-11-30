@@ -1,8 +1,8 @@
-package Chapter7;
+package MyPractice;
 
 import java.util.*;
 
-public class MallMart {
+public class PointOfSale {
 
     static Scanner scanner = new Scanner(System.in);
     static Date date = new Date();
