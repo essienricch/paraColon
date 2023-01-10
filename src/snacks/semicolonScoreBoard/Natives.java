@@ -1,14 +1,14 @@
-package snacks.studentScore;
+package snacks.semicolonScoreBoard;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student {
+public class Natives {
 
     private final String nameOfStudent;
     private List <Subject> subject;
 
-    public Student(String nameOfStudent) {
+    public Natives(String nameOfStudent) {
         this.nameOfStudent = nameOfStudent;
         this.subject =  new ArrayList<>();
     }
@@ -18,23 +18,24 @@ public class Student {
     }
 
 
-    public void courseRegistration(Subject subject){
-        this.subject.add(subject);
+    public void courseRegistration(String subject){
+
+        this.subject.add(new Subject(subject));
     }
 
     public Subject getSubject(Subject subject){
         for (Subject subjectRep: this.subject){
             if (subjectRep.equals(subject)){
                 return subjectRep;
-            }
+            }else throw new IllegalArgumentException("subject not offered by student");
         }return null;
     }
 
-    public Subject getSubject(String subject){
+    public String  getSubject(String subject){
         for (Subject subjectRep: this.subject){
             if (subjectRep.getName().equals(subject)){
-                return subjectRep;
-            }
+                return subjectRep.getName();
+            }else throw new IllegalArgumentException("subject not offered by student");
         }return null;
     }
 
@@ -43,6 +44,16 @@ public class Student {
             return subjectRep;
         }return null;
     }
+
+    public int count(){
+        return subject.size();
+    }
+
+    public String getSubject(int number){
+        return subject.get(number-1).getName();
+    }
+
+
 
 
 }

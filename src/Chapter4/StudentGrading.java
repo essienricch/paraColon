@@ -16,18 +16,18 @@ public class StudentGrading {
    }*/
 
     public void setName(){
-        System.out.print("Enter Student name: ");
+        System.out.print("Enter Natives name: ");
         String name = scanner.nextLine();
         this.name=name;
-        System.out.println("Student name: "+name);
+        System.out.println("Natives name: "+name);
     }
 
     public void setScore(){
-        System.out.print("Enter Student score: ");
+        System.out.print("Enter Natives score: ");
         double score = scanner.nextDouble();
         if (score > 0 && score <= 100){
             this.score= score;
-            System.out.println("Student score: "+score);
+            System.out.println("Natives score: "+score);
         }
     }
 

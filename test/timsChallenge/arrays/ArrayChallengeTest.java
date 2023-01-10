@@ -1,6 +1,5 @@
-package TimsChallenge;
+package timsChallenge.arrays;
 
-import TimsChallenge.Arrays.ArrayChallenge;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

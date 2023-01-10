@@ -1,4 +1,4 @@
-package Chapter9.Estore;
+package Chapter9.eStore;
 
 public class Admin extends User{
 }

@@ -1,4 +1,4 @@
-package Chapter3;
+package Chapter3.HeartRate;
 
 import java.util.Scanner;
 

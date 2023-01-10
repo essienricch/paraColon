@@ -1,4 +1,4 @@
-package TimsChallenge.MobilePhone;
+package timsChallenge.mobilePhone;
 
 import java.util.ArrayList;
 import java.util.Scanner;

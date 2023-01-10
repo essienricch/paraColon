@@ -31,10 +31,10 @@ public class StudentReport {
                                 studentNumber = number;
                                 studentName = new String[studentNumber];
                         for (int i = 0, j = 1; i < studentName.length; i++, j++) {
-                            System.out.println("Enter Student " + j +" name: ");
+                            System.out.println("Enter Natives " + j +" name: ");
                             scanner.nextLine();
                             while (scanner.nextLine().isEmpty()) {
-                                System.out.println("Enter Student " + j + " name: ");
+                                System.out.println("Enter Natives " + j + " name: ");
                                 name = scanner.nextLine();
                             }
                                 studentName[i] = scanner.nextLine();

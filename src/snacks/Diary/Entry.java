@@ -1,20 +1,21 @@
 package snacks.Diary;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Entry {
 
     private String title;
     private String body;
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
     private int id;
 
     public  Entry(int id, String title, String body){
         this.id = id;
         this.body = body;
         this.title = title;
-        createdAt = LocalDate.now();
+        createdAt = LocalDateTime.now();
     }
 
     public int getId() {

@@ -1,5 +1,6 @@
 package MyPractice;
 
+import Chapter4.GasMileage;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +9,7 @@ public class GasMileageTest {
 
     @Test
     void totalAverage(){
-        double average =GasMileage.totalAverage(250,5,10);
+        double average = GasMileage.totalAverage(250,5,10);
         assertEquals(5.0,average);
     }
 }

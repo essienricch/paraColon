@@ -1,24 +1,19 @@
-package snacks.studentScore;
+package snacks.semicolonScoreBoard;
 
 public class Subject {
 
-    private  String name;
-    private int subjectCode;
+    private final String name;
 
     private int scores;
 
-    public Subject(String name, int subjectCode) {
+    public Subject(String name) {
         this.name = name;
-        this.subjectCode = subjectCode;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getSubjectCode() {
-        return subjectCode;
-    }
 
     public int getScores() {
         return scores;
@@ -28,12 +23,4 @@ public class Subject {
         this.scores = score;
     }
 
-    @Override
-    public String toString() {
-        return "Subject{" +
-                "name='" + name + '\'' +
-                ", subjectCode=" + subjectCode +
-                ", scoreSheet=" + scores +
-                '}';
-    }
 }

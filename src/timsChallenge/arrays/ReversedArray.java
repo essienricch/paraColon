@@ -1,4 +1,4 @@
-package TimsChallenge.Arrays;
+package timsChallenge.arrays;
 
 public class ReversedArray {
 

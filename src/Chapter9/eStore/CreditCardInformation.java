@@ -1,4 +1,4 @@
-package Chapter9.Estore;
+package Chapter9.eStore;
 
 import java.time.Month;
 import java.time.Year;

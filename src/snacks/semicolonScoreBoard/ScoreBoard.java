@@ -1,46 +1,54 @@
-package snacks.studentScore;
+package snacks.semicolonScoreBoard;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class SemicolonScoreBoard {
+public class ScoreBoard {
 
-    private List <Student> nativeList;
+    private List <Natives> nativeList = new ArrayList<>();
+
 
     private void upHeader(){
         System.out.println("========================================================");
-        System.out.printf("%n%s%25s%10s%10s%n","STUDENT","SUBJECT 1","SUBJECT 2","SUBJECT 3");
-        System.out.println("=======================================================");
+        System.out.printf("%s%20s%15s%15s%n","STUDENT","SUBJECT-1","SUBJECT-2","SUBJECT-3");
+        System.out.println("==========================================================");
     }
     private void downHeader(){
-        System.out.println("============================================");
-        System.out.println();
-        System.out.println("=============================================");
+        System.out.println("============================================================");
+        System.out.println("=============================================================");
     }
 
-    public void addNatives(Student student){
-        nativeList.add(student);
+    public void addNatives(Natives natives){
+        nativeList.add(natives);
     }
 
-    public List<Student> getNativeList() {
+    public List<Natives> getNativeList() {
         return nativeList;
     }
 
-    public void studentSubjectTemplate(Student student, String subject){
-        for (Student student1: nativeList){
-            if (student1.equals(student)){
-                System.out.printf("%s%10s%n%s%10s%n%s%10d%n","STUDENT NAME --> ",student1.getNameOfStudent(),"SUBJECT --> ",student1.getSubject(subject),"SCORE --> ",student1.getSubject(subject).getScores());
-            }
-        }
+    public void studentSubjectTemplate(String studentName, String subject){
+        for (Natives natives1 : nativeList){
+            if (natives1.getNameOfStudent().equals(studentName)){
+                System.out.printf("%s%10s%n%s%10s%n%s%10d%n","STUDENT NAME --> ", natives1.getNameOfStudent(),"SUBJECT --> ", natives1.getSubject(subject),"SCORE --> ", natives1.getSubject(subject));
+            }else throw new IllegalArgumentException("such student not found");
+        }downHeader();
     }
 
     public void displayResult(){
         upHeader();
-        for (Student student : nativeList) {
-            System.out.printf("%n%s%25d%10d%10d", student.getNameOfStudent(), student.getSubject().getScores(), student.getSubject().getScores(), student.getSubject().getScores());
+        for (Natives natives : nativeList) {
+            System.out.printf("%n%s%20d%15d%15d", natives.getNameOfStudent(), natives.getSubject().getScores(), natives.getSubject().getScores(), natives.getSubject().getScores());
         }
         System.out.println();
         downHeader();
     }
 
-    public void scoreStudent()
+//    public void giveStudentScore(String student, String subject, int score){
+//        for (Natives natives1 : nativeList){
+//            if (natives1.getNameOfStudent().equals(student)){
+//               natives1.getSubject(subject).setScoreSheet(score);
+//            }else throw new IllegalArgumentException("student not found");
+//        }
+//    }
+
 }

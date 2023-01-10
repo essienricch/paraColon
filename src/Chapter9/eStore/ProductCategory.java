@@ -1,4 +1,4 @@
-package Chapter9.Estore;
+package Chapter9.eStore;
 
 public enum ProductCategory {
     ELECTRONICS, GROCERIES, UTENSILS, CLOTHING;

@@ -60,9 +60,22 @@ public class DiaryTest {
     @Test
     void entriesCanNotBeAddedToTheDiaryWhenLockedTest(){
         assertTrue(richDiary.isLocked());
+        try {
+            richDiary.write("Meditation","Pray for Grace and blessings");
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+       assertEquals(0, richDiary.numberOfEvents());
+    }
 
-        richDiary.write("Break-FAST","prepare break-fast");
-        assertEquals(0, richDiary.numberOfEvents());
+    @Test
+    void
+    writingToLockedDiaryThrowsExceptionTest(){
+        assertTrue(richDiary.isLocked());
+
+        assertThrows(IllegalArgumentException.class, () -> richDiary.write("Break-FAST","prepare break-fast"));
+        //assertEquals(0, richDiary.numberOfEvents());
+
     }
 
     @Test

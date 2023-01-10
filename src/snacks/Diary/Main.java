@@ -93,8 +93,8 @@ public class Main {
     }
 
     private static void getTotalNumberOfEntries() {
-        int totalNumberofEntry = diary.numberOfEvents();
-        print("You have "+totalNumberofEntry + " Entries");
+        int totalNumberOfEntry = diary.numberOfEvents();
+        print("You have "+totalNumberOfEntry + " Entries");
         displayDairyMenu();
     }
 

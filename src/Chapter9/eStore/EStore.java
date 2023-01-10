@@ -1,4 +1,4 @@
-package Chapter9.Estore;
+package Chapter9.eStore;
 
 import java.util.List;
 

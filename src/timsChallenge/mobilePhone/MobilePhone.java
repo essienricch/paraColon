@@ -1,4 +1,4 @@
-package TimsChallenge.MobilePhone;
+package timsChallenge.mobilePhone;
 import java.time.LocalTime;
 import java.util.Scanner;
 

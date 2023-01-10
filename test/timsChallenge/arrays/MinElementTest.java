@@ -1,7 +1,6 @@
-package TimsChallenge;
+package timsChallenge.arrays;
 
 
-import TimsChallenge.Arrays.MinElement;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

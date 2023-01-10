@@ -1,4 +1,4 @@
-package Chapter3;
+package Chapter3.Account;
 
 import Chapter3.Account.Account;
 
