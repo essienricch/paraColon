@@ -39,7 +39,8 @@ public class Entry {
                 Written on %s
                 Title: %s
                 Body: %s
-                ============================
+                ==========================
+                ==========================
                 """,id,time,title,body);
     }
 
