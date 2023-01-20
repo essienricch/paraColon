@@ -16,6 +16,7 @@ public class PlayerTest {
 
     @Test
    void testThatPlayerIsCreated(){
+
         assertNotNull(player);
     }
 
