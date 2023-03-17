@@ -1,4 +1,4 @@
-package dsa.array.regular.dynamic;
+package dsa.array.dynamic;
 
 public class Main {
     public static void main(String[] args) {

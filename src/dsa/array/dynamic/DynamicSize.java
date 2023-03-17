@@ -1,4 +1,4 @@
-package dsa.array.regular.dynamic;
+package dsa.array.dynamic;
 
 import java.util.Arrays;
 
